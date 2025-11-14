@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_HUB_REPO = "vijayalakshmi/python-app"
+        DOCKER_HUB_REPO = "8838036650/python-app"
         IMAGE_TAG = "latest"
     }
 
@@ -11,7 +11,7 @@ pipeline {
         stage('Clone Repository') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/your-repo/python-docker-app.git'
+                    url: 'https://github.com/Vijayalakshmi1608/python-jenkins-docker-integration'
             }
         }
 
